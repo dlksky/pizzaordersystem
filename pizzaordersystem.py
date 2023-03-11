@@ -129,7 +129,7 @@ def main():
 
     with open('Orderss_Database.csv', 'a') as orders:
         orders = csv.writer(orders, delimiter=',')
-        orders.writerow([NAME, TC, KREDI_NO, KREDI_PSW, order.get_description(), SIPARIS_ZAMANI])
+        orders.writerow([NAME,SURNAME,TC, KREDI_NO, KREDI_PSW, order.get_description(), SIPARIS_ZAMANI])
     print("Siparişiniz Onaylandı.")
 
 

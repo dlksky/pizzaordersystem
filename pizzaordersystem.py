@@ -127,7 +127,7 @@ def main():
     KREDI_PSW = input("Kredi Kartı Şifrenizi Giriniz: ")
     SIPARIS_ZAMANI = datetime.datetime.now()
 
-    with open('Orderss_Database.csv', 'a') as orders:
+    with open('Orderss_Database.csv', encoding="utf-8" , 'a') as orders:
         orders = csv.writer(orders, delimiter=',')
         orders.writerow([NAME,SURNAME,TC, KREDI_NO, KREDI_PSW, order.get_description(), SIPARIS_ZAMANI])
     print("Siparişiniz Onaylandı.")
